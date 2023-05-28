@@ -1,0 +1,10 @@
+const median=(arr)=>{
+    const sortedarr=arr.sort((a,b)=>a-b)
+    const middle=Math.floor(sortedarr.length/2)
+    if(sortedarr.length%2===0){
+        return (sortedarr[middle-1]+sortedarr[middle]/2)
+    }
+    else return sortedarr[middle]
+}
+const arr=[10,23,42,25,65]
+console.log(median(arr))
